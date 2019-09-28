@@ -1,24 +1,48 @@
-# README
+# DB Layout
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## users table
 
-Things you may want to cover:
+|Column|Type|Options|
+|------|----|-------|
+|nickname|string|null: false|
+*E-mail/Passwords will be added by "Devise"
 
-* Ruby version
+### Association
+- has_many :group_members
+- has_many :groups through: :group_members
+- has_many :comments
 
-* System dependencies
+## comments table
 
-* Configuration
+|Column|Type|Options|
+|------|----|-------|
+|comment|text|-|
+|image|string|-|
+|group_id|integer|null: false, foreign_key: true|
+|user_id|integer|null: false, foreign_key: true|
 
-* Database creation
+### Association
+- belongs_to :group
+- belongs_to :user
 
-* Database initialization
+## groups table
 
-* How to run the test suite
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
 
-* Services (job queues, cache servers, search engines, etc.)
+### Association
+- has_many :comments
+- has_many :group_members
+- has_many :users through: :group_members
 
-* Deployment instructions
+## group_members table
 
-* ...
+|Column|Type|Options|
+|------|----|-------|
+|user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
+
+### Association
+- belongs_to :group
+- belongs_to :user
