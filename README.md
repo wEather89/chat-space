@@ -5,7 +5,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |nickname|text|null: false|
-|e-mail|integer|null: false|
+*E-mail/Passwords will be added by "Devise"
 
 ### Association
 - has_many :groups through: :group_members
