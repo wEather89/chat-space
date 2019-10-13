@@ -1,1 +1,80 @@
-<h1>html.erb</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chat Space</title>
+    <%= stylesheet_link_tag "application", :media => "all" %>
+  </head>
+  <body>
+    <div class="side-bar">
+      <div class="side-header">
+        <div class= "side-header-box">
+          <div class="side-header-box-user-name">
+            hogehoge
+          </div>
+          <ul class="side-header-box-menu">
+            <li>
+              <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+            </li>
+            <li>
+              <i class="fa fa-cog" aria-hidden="true"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="side-content">
+        <div class="side-content-box">
+          <h2 class="side-content-group-name">
+            group hoge
+          </h2>
+          <h4 class="side-content-message-box">
+            hoge message
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="main-header">
+        <div class="main-header-right-box">
+          <h2 class="main-header-group-name">
+            group hoge
+          </h2>
+          <h4 class="main-header-group-member">
+          name: hogehoge, hogeee, hogege, hogen
+          </h4>
+        </div>
+        <div class="main-header-edit-button">
+          EDIT
+        </div>
+      </div>
+      <div class="main-message-lender">
+        <div class="main-message-lender-upperbox">
+          <p class="upperbox-namebox">
+            jack
+          </p>
+          <p class="upperbox-timestamp">
+            199/5/2 20:31
+          </p>
+        </div>
+        <div class="main-message-lender-messagebox">
+          this is my message
+        </div>
+      </div>
+      <div class="main-type-form">
+        <div class="main-type-form-box">
+          <div class="main-type-form-innerbox">
+            <div class="message">
+              type a text
+            </div>
+            <label class="message-image">
+              <i class="fa fa-picture-o fa-lg" aria-hidden="true"></i>
+            </label>
+          </div>
+          <div class="main-type-form-button">
+            SEND
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
