@@ -1,0 +1,45 @@
+.side-bar{
+  width: 300px;
+  position: fixed;
+  .side-header{
+    height: 100px;
+    background: #253141;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    color: white;
+    .side-header-box{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      font-weight: bold;
+      .side-header-box-menu{
+        display: flex;
+      }
+    }
+  }
+}
+
+.side-content{
+  background-color: #2f3e51;
+  height: calc(100vh - 100px);
+  padding: 20px 20px 0;
+  overflow: scroll;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  .side-content-box{
+    padding: 20px 0;
+    .side-content-group-name{
+      padding-bottom: 5px;
+      font-size: 15px;
+      font-weight: bold;
+      color: #FFFFFF
+    }
+    .side-content-message-box{
+      font-size: 11px;
+      font-weight: bold;
+      color: #FFFFFF
+    }
+  }
+}
