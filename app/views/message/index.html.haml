@@ -1,40 +1,41 @@
 !!! 5
 %html
   %head
-    %meta charset="utf-8"
+    %meta(charset="utf-8")
     %title Chat Space
-    - stylesheet_link_tag "application", :media => "all"
+    = stylesheet_link_tag "application", media: "all"
+    -# Reference for myself https://ruby-rails.hatenadiary.com/entry/20141001/1412097051
   %body
     .side-bar
       .side-header
         .side-header-box
           .side-header-box-user-name
             hogehoge
-          %ul{class="side-header-box-menu"}
+          %ul{class: "side-header-box-menu"}
             %li
-              %i{class="fa fa-pencil-square-o" aria-hidden="true"}
+              %i{class: "fa fa-pencil-square-o", :aria-hidden => "true"}
             %li
-              %i{class="fa fa-cog" aria-hidden="true"}
+              %i{class: "fa fa-cog", :aria-hidden => "true"}
       .side-content
         .side-content-box
-          %h2{class="side-content-group-name"}
+          %h2{class: "side-content-group-name"}
             group hoge
-          %h4{class="side-content-message-box"}
+          %h4{class: "side-content-message-box"}
             hoge message
     .main-content
       .main-header
         .main-header-right-box
-          %h2{class="main-header-group-name"}
+          %h2{class: "main-header-group-name"}
             group hoge
-          %h4{class="main-header-group-member"}
-          name: hogehoge, hogeee, hogege, hogee
+          %h4{class: "main-header-group-member"}
+            name: hogehoge, hogeee, hogege, hogee
         .main-header-edit-button
           EDIT
       .main-message-lender
         .main-message-lender-upperbox
-          %p{class="upperbox-namebox"}
+          %p{class: "upperbox-namebox"}
             jack
-          %p{class="upperbox-timestamp"}
+          %p{class: "upperbox-timestamp"}
             1993/5/2 20:31
         .main-message-lender-messagebox
           this is my message
@@ -43,7 +44,7 @@
           .main-type-form-innerbox
             .message
               type a text
-            %label{class="message-image"}
-              %i{class="fa fa-picture-o fa-lg" aria-hidden="true"}
+            %label{class: "message-image"}
+              %i{class: "fa fa-picture-o fa-lg", :aria-hidden => "true"}
           .main-type-form-button
             SEND
