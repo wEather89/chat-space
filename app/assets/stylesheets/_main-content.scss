@@ -1,5 +1,5 @@
 .main-content{
-  width:  calc(100% - $side-content-width);
+  width:  calc(100% - #{$side-content-width});
   height: 100vh;
   left: $side-content-width;
   position: fixed;
@@ -15,12 +15,14 @@
 
       .main-header-group-name{
         font-size: 20px;
-        padding-top: 35px; 
+        padding-top: 35px;
+        color: #333333;
       } 
       
       .main-header-group-member{
         font-size: 12px;
         padding-top: 15px;
+        color: $small-gray;
       }      
     }
     
@@ -53,7 +55,7 @@
       .upperbox-timestamp{
         font-size: 14px;
         margin-left: 10px;
-        color: #999999;
+        color: $small-gray;
       }
     }
     
