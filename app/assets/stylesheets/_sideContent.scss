@@ -1,8 +1,8 @@
-.side-bar{
-  width: $side-content-width;
+.sideBar{
+  width: $sideContent-width;
   position: fixed;
   
-  .side-header{
+  .sideHeader{
     height: 100px;
     background: #253141;
     display: flex;
@@ -10,20 +10,20 @@
     padding: 0 20px;
     color: $main-white;
   
-    .side-header-box{
+    .sideHeader__box{
       display: flex;
       justify-content: space-between;
       width: 100%;
       font-weight: bold;
   
-      .side-header-box-menu{
+      .sideHeader__box__menu{
         display: flex;
       }
     }
   }
 }
 
-.side-content{
+.sideContent{
   background-color: #2f3e51;
   height: calc(100vh - 100px);
   padding: 20px 20px 0;
@@ -32,17 +32,17 @@
   font-size: 16px;
   font-weight: bold;
   
-  .side-content-box{
+  .sideContent__box{
     padding: 20px 0;
   
-    .side-content-group-name{
+    .sideContent__groupName{
       padding-bottom: 5px;
       font-size: 15px;
       font-weight: bold;
       color: $main-white;
     }
   
-    .side-content-message-box{
+    .sideContent__messageBox{
       font-size: 11px;
       font-weight: bold;
       color: $main-white;

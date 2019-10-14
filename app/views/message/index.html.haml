@@ -6,45 +6,45 @@
     = stylesheet_link_tag "application", media: "all"
     -# Reference for myself https://ruby-rails.hatenadiary.com/entry/20141001/1412097051
   %body
-    .side-bar
-      .side-header
-        .side-header-box
-          .side-header-box-user-name
+    .sideBar
+      .sideHeader
+        .sideHeader__box
+          .sideHeader__box__userName
             hogehoge
-          %ul{class: "side-header-box-menu"}
+          %ul{class: "sideHeader__box__menu"}
             %li
               %i{class: "fa fa-pencil-square-o", :aria-hidden => "true"}
             %li
               %i{class: "fa fa-cog", :aria-hidden => "true"}
-      .side-content
-        .side-content-box
-          %h2{class: "side-content-group-name"}
+      .sideContent
+        .sideContent__box
+          %h2{class: "sideContent__groupName"}
             group hoge
-          %h4{class: "side-content-message-box"}
+          %h4{class: "sideContent__messageBox"}
             hoge message
-    .main-content
-      .main-header
-        .main-header-right-box
-          %h2{class: "main-header-group-name"}
+    .mainContent
+      .mainHeader
+        .mainHeader__rightBox
+          %h2{class: "mainHeader__groupName"}
             group hoge
-          %h4{class: "main-header-group-member"}
+          %h4{class: "mainHeader__groupMember"}
             name: hogehoge, hogeee, hogege, hogee
-        .main-header-edit-button
+        .mainHeader__editButton
           EDIT
-      .main-message-lender
-        .main-message-lender-upperbox
-          %p{class: "upperbox-namebox"}
+      .mainMessageLender
+        .mainMessageLender__upperBox
+          %p{class: "mainMessageLender__upperBox__nameBox"}
             jack
-          %p{class: "upperbox-timestamp"}
+          %p{class: "mainMessageLender__upperBox__timestamp"}
             1993/5/2 20:31
-        .main-message-lender-messagebox
+        .mainMessageLender__messageBox
           this is my message
-      .main-type-form
-        .main-type-form-box
-          .main-type-form-innerbox
-            .message
+      .mainForm
+        .mainForm__box
+          .mainForm__box__innerBox
+            .mainForm__box__innerBox__message
               type a text
-            %label{class: "message-image"}
+            %label{class: "mainForm__box__innerBox__message__image"}
               %i{class: "fa fa-picture-o fa-lg", :aria-hidden => "true"}
-          .main-type-form-button
+          .mainForm__box__button
             SEND

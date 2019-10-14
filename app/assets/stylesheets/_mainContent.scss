@@ -1,32 +1,32 @@
-.main-content{
-  width:  calc(100% - #{$side-content-width});
+.mainContent{
+  width:  calc(100% - #{$sideContent-width});
   height: 100vh;
-  left: $side-content-width;
+  left: $sideContent-width;
   position: fixed;
 
-  .main-header{
+  .mainHeader{
     height: 100px;
     padding: 0 40px;
     border-bottom: solid 1px #eee;
     display: flex;
 
-    .main-header-right-box{
+    .mainHeader__rightBox{
       width: calc(100% - 80px);
 
-      .main-header-group-name{
+      .mainHeader__groupName{
         font-size: 20px;
         padding-top: 35px;
         color: #333333;
       } 
       
-      .main-header-group-member{
+      .mainHeader__groupMember{
         font-size: 12px;
         padding-top: 15px;
         color: $small-gray;
       }      
     }
     
-    .main-header-edit-button{
+    .mainHeader__editButton{
       height: 40px;
       padding: 0 20px;
       margin-top: 28px;
@@ -36,55 +36,55 @@
     }
   }
   
-  .main-message-lender{
+  .mainMessageLender{
     height: calc(100vh - 100px - 60px);
     background: #fafafa;
     padding: 46px 40px 0 40px;
     overflow: scroll;
     
-    .main-message-lender-upperbox{
+    .mainMessageLender__upperBox{
       font-size: 16px;
       margin-bottom: 10px;
       display: flex;
       
-      .upperbox-namebox{
+      .mainMessageLender__upperBox__nameBox{
         font-size: 16px;
         font-weight: bold;
       }
       
-      .upperbox-timestamp{
+      .mainMessageLender__upperBox__timestamp{
         font-size: 14px;
         margin-left: 10px;
         color: $small-gray;
       }
     }
     
-    .main-message-lender-messagebox{
+    .mainMessageLender__messageBox{
       font-size: 14px;
       margin-bottom: 40px;
     }
   }
   
-  .main-type-form{
+  .mainForm{
     height: 80px;
     background: #C0C0C0;
     padding: 0 40px;
     position: sticky;
     bottom: 0;
     
-    .main-type-form-box{
+    .mainForm__box{
       padding-top: 15px;
       clear: both;
       display: flex;
       
-      .main-type-form-innerbox{
+      .mainForm__box__innerBox{
         height: 50px;
         background: $main-white;
         line-height: 50px;
         width: calc(100% - 115px);
         display: flex;
         
-        .message{
+        .mainForm__box__innerBox__message{
           background: $main-white;
           line-height: 50px;
           color: #434a54;
@@ -92,13 +92,13 @@
           width: calc(100% - 50px);
         }
         
-        .message-image{
+        .mainForm__box__innerBox__message__image{
           line-height: 50px;
           text-align: center;
         }
       }
       
-      .main-type-form-button{
+      .mainForm__box__button{
         background: #38Aef0;
         margin-left: 15px;
         height: 50px;
