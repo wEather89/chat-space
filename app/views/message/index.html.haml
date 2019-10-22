@@ -31,7 +31,7 @@
           .mainForm__box__innerBox
             = form_for(@message) do |f|
               = f.text_field :text, placeholder: 'input your message' 
-              .mainForm__box__innerBox__message__image
+              %label.mainForm__box__innerBox__message__image
                 %i.upload_picture.fa.fa-picture-o.fa-lg
                 %input.hidden{type: 'file'}
               = f.submit "send",{class: "mainForm__box__button"}
