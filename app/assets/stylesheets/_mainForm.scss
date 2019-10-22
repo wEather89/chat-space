@@ -5,11 +5,11 @@
   position: sticky;
   bottom: 0;
   
-  .mainForm__box{
+  &__box{
     padding-top: 15px;
     clear: both;
     
-    .mainForm__box__innerBox{
+    &__innerBox{
       height: 50px;
       line-height: 50px;
       width: 100%;
@@ -32,7 +32,7 @@
         }
       }
 
-        .mainForm__box__innerBox__message__image{
+        &__message__image{
           height: 50px;
           background: $main-white;
           padding-right: 10px;
@@ -44,7 +44,7 @@
         }
       
     
-      .mainForm__box__button{
+      &__button{
         background: #38Aef0;
         border: none;
         cursor: pointer;

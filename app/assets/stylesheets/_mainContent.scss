@@ -12,24 +12,24 @@
     padding: 46px 40px 0 40px;
     overflow: scroll;
     
-    .mainMessageLender__upperBox{
+    &__upperBox{
       font-size: 16px;
       margin-bottom: 10px;
       display: flex;
       
-      .mainMessageLender__upperBox__nameBox{
+      &__nameBox{
         font-size: 16px;
         font-weight: bold;
       }
       
-      .mainMessageLender__upperBox__timestamp{
+       &__timestamp{
         font-size: 14px;
         margin-left: 10px;
         color: $small-gray;
       }
     }
     
-    .mainMessageLender__messageBox{
+    &__messageBox{
       font-size: 14px;
       margin-bottom: 40px;
     }

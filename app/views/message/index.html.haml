@@ -12,9 +12,9 @@
     .mainContent
       .mainHeader
         .mainHeader__rightBox
-          %h2{class: "mainHeader__groupName"}
+          %h2{class: "mainHeader__rightBox__groupName"}
             group hoge
-          %h4{class: "mainHeader__groupMember"}
+          %h4{class: "mainHeader__rightBox__groupMember"}
             name: hogehoge, hogeee, hogege, hogee
         .mainHeader__editButton
           EDIT
@@ -34,5 +34,5 @@
               %label.mainForm__box__innerBox__message__image
                 %i.upload_picture.fa.fa-picture-o.fa-lg
                 %input.hidden{type: 'file'}
-              = f.submit "send",{class: "mainForm__box__button"}
+              = f.submit "send",{class: "mainForm__box__innerBox__button"}
 
