@@ -1,0 +1,61 @@
+.mainForm{
+  height: 80px;
+  background: #C0C0C0;
+  padding: 0 40px;
+  position: sticky;
+  bottom: 0;
+  
+  .mainForm__box{
+    padding-top: 15px;
+    clear: both;
+    
+    .mainForm__box__innerBox{
+      height: 50px;
+      line-height: 50px;
+      width: 100%;
+      
+      .new_message{
+        line-height: 50px;
+        color: #434a54;
+        padding: 0 0 0 10px;
+        width: 100%;
+        display: flex;
+
+        #message_text{
+          background: $main-white;
+          line-height: 50px;
+          color: #434a54;
+          padding: 0 0 0 10px;
+          width: calc(100% - 150px);
+          height: 50px;
+          border: none;
+        }
+      }
+
+        .mainForm__box__innerBox__message__image{
+          height: 50px;
+          background: $main-white;
+          padding-right: 10px;
+
+          .hidden {
+            display: none;
+          }
+        }
+      
+    
+      .mainForm__box__button{
+        background: #38Aef0;
+        border: none;
+        margin-left: 15px;
+        height: 50px;
+        width: 90px;
+        font-weight: bold;
+        line-height: 50px;
+        text-align: center;
+        font-size: 14px;
+        color: $main-white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+    }
+  }
+}

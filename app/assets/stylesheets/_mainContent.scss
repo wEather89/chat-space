@@ -4,38 +4,8 @@
   left: $sideContent-width;
   position: fixed;
 
-  .mainHeader{
-    height: 100px;
-    padding: 0 40px;
-    border-bottom: solid 1px #eee;
-    display: flex;
+  @import "mainHeader";
 
-    .mainHeader__rightBox{
-      width: calc(100% - 80px);
-
-      .mainHeader__groupName{
-        font-size: 20px;
-        padding-top: 35px;
-        color: #333333;
-      } 
-      
-      .mainHeader__groupMember{
-        font-size: 12px;
-        padding-top: 15px;
-        color: $small-gray;
-      }      
-    }
-    
-    .mainHeader__editButton{
-      height: 40px;
-      padding: 0 20px;
-      margin-top: 28px;
-      line-height: 40px;
-      border: solid 1px #87cefa;
-      color: #87cefa;
-    }
-  }
-  
   .mainMessageLender{
     height: calc(100vh - 100px - 60px);
     background: #fafafa;
@@ -65,51 +35,5 @@
     }
   }
   
-  .mainForm{
-    height: 80px;
-    background: #C0C0C0;
-    padding: 0 40px;
-    position: sticky;
-    bottom: 0;
-    
-    .mainForm__box{
-      padding-top: 15px;
-      clear: both;
-      display: flex;
-      
-      .mainForm__box__innerBox{
-        height: 50px;
-        background: $main-white;
-        line-height: 50px;
-        width: calc(100% - 115px);
-        display: flex;
-        
-        .mainForm__box__innerBox__message{
-          background: $main-white;
-          line-height: 50px;
-          color: #434a54;
-          padding: 0 0 0 10px;
-          width: calc(100% - 50px);
-        }
-        
-        .mainForm__box__innerBox__message__image{
-          line-height: 50px;
-          text-align: center;
-        }
-      }
-      
-      .mainForm__box__button{
-        background: #38Aef0;
-        margin-left: 15px;
-        height: 50px;
-        width: 90px;
-        font-weight: bold;
-        line-height: 50px;
-        text-align: center;
-        font-size: 14px;
-        color: $main-white;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      }      
-    }
-  }
+  @import "mainForm";
 }

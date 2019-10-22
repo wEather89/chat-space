@@ -4,24 +4,11 @@
     %meta(charset="utf-8")
     %title Chat Space
     = stylesheet_link_tag "application", media: "all"
+    = javascript_include_tag 'application', "data-turbolinks-track": 'reload'
     -# Reference for myself https://ruby-rails.hatenadiary.com/entry/20141001/1412097051
   %body
     .sideBar
-      .sideHeader
-        .sideHeader__box
-          .sideHeader__box__userName
-            hogehoge
-          %ul{class: "sideHeader__box__menu"}
-            %li
-              %i{class: "fa fa-pencil-square-o", :aria-hidden => "true"}
-            %li
-              %i{class: "fa fa-cog", :aria-hidden => "true"}
-      .sideContent
-        .sideContent__box
-          %h2{class: "sideContent__groupName"}
-            group hoge
-          %h4{class: "sideContent__messageBox"}
-            hoge message
+      = render :partial => 'sideBar'
     .mainContent
       .mainHeader
         .mainHeader__rightBox
@@ -42,9 +29,10 @@
       .mainForm
         .mainForm__box
           .mainForm__box__innerBox
-            .mainForm__box__innerBox__message
-              type a text
-            %label{class: "mainForm__box__innerBox__message__image"}
-              %i{class: "fa fa-picture-o fa-lg", :aria-hidden => "true"}
-          .mainForm__box__button
-            SEND
+            = form_for(@message) do |f|
+              = f.text_field :text, placeholder: 'input your message' 
+              .mainForm__box__innerBox__message__image
+                %i.upload_picture.fa.fa-picture-o.fa-lg
+                %input.hidden{type: 'file'}
+              = f.submit "send",{class: "mainForm__box__button"}
+
