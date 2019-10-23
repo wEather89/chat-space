@@ -4,25 +4,23 @@
     %meta(charset="utf-8")
     %title Chat Space
     = stylesheet_link_tag "application", media: "all"
-    = javascript_include_tag 'application', "data-turbolinks-track": 'reload'
-    -# Reference for myself https://ruby-rails.hatenadiary.com/entry/20141001/1412097051
   %body
     .sideBar
-      = render :partial => 'sideBar'
+      = render partial: 'sideBar'
     .mainContent
       .mainHeader
         .mainHeader__rightBox
-          %h2{class: "mainHeader__rightBox__groupName"}
+          %h2.mainHeader__rightBox__groupName
             group hoge
-          %h4{class: "mainHeader__rightBox__groupMember"}
+          %h4.mainHeader__rightBox__groupMember
             name: hogehoge, hogeee, hogege, hogee
         .mainHeader__editButton
           EDIT
       .mainMessageLender
         .mainMessageLender__upperBox
-          %p{class: "mainMessageLender__upperBox__nameBox"}
+          %p.mainMessageLender__upperBox__nameBox
             jack
-          %p{class: "mainMessageLender__upperBox__timestamp"}
+          %p.mainMessageLender__upperBox__timestamp
             1993/5/2 20:31
         .mainMessageLender__messageBox
           this is my message
