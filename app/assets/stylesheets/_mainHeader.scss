@@ -1,0 +1,31 @@
+.mainHeader{
+  height: 100px;
+  padding: 0 40px;
+  border-bottom: solid 1px #eee;
+  display: flex;
+
+  &__rightBox{
+    width: calc(100% - 80px);
+
+    &__groupName{
+      font-size: 20px;
+      padding-top: 35px;
+      color: #333333;
+    } 
+    
+    &__groupMember{
+      font-size: 12px;
+      padding-top: 15px;
+      color: $small-gray;
+    }      
+  }
+  
+  &__editButton{
+    height: 40px;
+    padding: 0 20px;
+    margin-top: 28px;
+    line-height: 40px;
+    border: solid 1px #87cefa;
+    color: #87cefa;
+  }
+}

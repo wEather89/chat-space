@@ -1,0 +1,39 @@
+.mainContent{
+  width:  calc(100% - #{$sideContent-width});
+  height: 100vh;
+  left: $sideContent-width;
+  position: fixed;
+
+  @import "mainHeader";
+
+  .mainMessageLender{
+    height: calc(100vh - 100px - 60px);
+    background: #fafafa;
+    padding: 46px 40px 0 40px;
+    overflow: scroll;
+    
+    &__upperBox{
+      font-size: 16px;
+      margin-bottom: 10px;
+      display: flex;
+      
+      &__nameBox{
+        font-size: 16px;
+        font-weight: bold;
+      }
+      
+       &__timestamp{
+        font-size: 14px;
+        margin-left: 10px;
+        color: $small-gray;
+      }
+    }
+    
+    &__messageBox{
+      font-size: 14px;
+      margin-bottom: 40px;
+    }
+  }
+  
+  @import "mainForm";
+}
