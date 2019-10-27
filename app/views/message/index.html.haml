@@ -8,8 +8,9 @@
           group hoge
         %h4.mainHeader__rightBox__groupMember
           name: hogehoge, hogeee, hogege, hogee
-      .mainHeader__editButton
-        EDIT
+      = link_to new_group_path do
+        .mainHeader__editButton
+          EDIT
     .mainMessageLender
       .mainMessageLender__upperBox
         %p.mainMessageLender__upperBox__nameBox
