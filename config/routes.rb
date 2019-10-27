@@ -3,9 +3,10 @@ Rails.application.routes.draw do
   root to: 'message#index'
 
   resources :users, only: [:edit, :update]
-  resources :prototypes
+  resources :groups, only: [:new, :create, :edit, :destroy]
   resources :messages, only: [:index, :new, :show, :create, :destroy]
-  scope module: :prototypes do
-    resources :popular, only: :index
-  end
+
+  # resources :groups, only: [:new, :create, :edit, :destroy] do
+  #   resources :messages, only: [:index, :new, :show, :create, :destroy]
+  # end
 end
