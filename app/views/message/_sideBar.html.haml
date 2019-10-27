@@ -1,12 +1,13 @@
 .sideHeader
   .sideHeader__box
     .sideHeader__box__userName
-      hogehoge
+      = current_user.nickname
     %ul.sideHeader__box__menu
       %li
         %i.fa.fa-pencil-square-o{:aria-hidden => "true"}
       %li
-        %i.fa.fa-cog{:aria-hidden => "true"}
+        = link_to edit_user_path(current_user) do
+          %i.fa.fa-cog{:aria-hidden => "true"}
 .sideContent
   .sideContent__box
     %h2.sideContent__box__groupName
