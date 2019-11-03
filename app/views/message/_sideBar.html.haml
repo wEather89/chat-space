@@ -10,8 +10,10 @@
         = link_to edit_user_path(current_user) do
           %i.fa.fa-cog
 .sideContent
-  .sideContent__box
-    %h2.sideContent__box__groupName
-      group hoge
-    %h4.sideContent__box__messageBox
-      hoge message
+  - current_user.groups.each do |group|
+    .sideContent__box
+      = link_to '#' do
+        .sideContent__box__groupName
+          = group.name
+        .sideContent__box__messageBox
+          メッセージはまだありません。
