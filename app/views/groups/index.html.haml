@@ -22,7 +22,7 @@
     .mainForm
       .mainForm__box
         .mainForm__box__innerBox
-          = form_for(@message) do |f|
+          = form_for[@group, @message] do |f|
             = f.text_field :text, placeholder: 'input your message' 
             %label.mainForm__box__innerBox__message__image
               %i.upload_picture.fa.fa-picture-o.fa-lg
