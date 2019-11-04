@@ -1,0 +1,9 @@
+.mainMessageLender__upperBox
+  %p.mainMessageLender__upperBox__nameBox
+    = message.user.nickname
+  %p.mainMessageLender__upperBox__timestamp
+    = message.created_at.strftime("%Y/%m/%d %H:%M")
+.mainMessageLender__messageBox
+  - if message.text.present?
+    = message.text
+  = image_tag message.image.url if message.image.present?

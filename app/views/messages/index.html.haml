@@ -7,18 +7,12 @@
         %h2.mainHeader__rightBox__groupName
           = @group.name
         %h4.mainHeader__rightBox__groupMember
-          name: hogehoge, hogeee, hogege, hogee
+          = @group.users[1].nickname
       = link_to new_group_path do
         .mainHeader__editButton
           EDIT
     .mainMessageLender
-      .mainMessageLender__upperBox
-        %p.mainMessageLender__upperBox__nameBox
-          jack
-        %p.mainMessageLender__upperBox__timestamp
-          1993/5/2 20:31
-      .mainMessageLender__messageBox
-        this is my message
+      = render @messages 
     .mainForm
       .mainForm__box
         .mainForm__box__innerBox
@@ -28,3 +22,7 @@
               %i.upload_picture.fa.fa-picture-o.fa-lg
               = f.file_field :image, class: 'hidden'
             = f.submit "send", class: "mainForm__box__innerBox__button"
+
+
+
+            

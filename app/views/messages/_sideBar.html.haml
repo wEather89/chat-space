@@ -1,0 +1,19 @@
+.sideHeader
+  .sideHeader__box
+    .sideHeader__box__userName
+      = current_user.nickname
+    %ul.sideHeader__box__menu
+      %li
+        = link_to new_group_path do
+          %i.fa.fa-pencil-square-o
+      %li
+        = link_to edit_user_path(current_user) do
+          %i.fa.fa-cog
+.sideContent
+  - current_user.groups.each do |group|
+    .sideContent__box
+      = link_to group_messages_path(group) do
+        .sideContent__box__groupName
+          = group.name
+        .sideContent__box__messageBox
+          = group.show_latest_message
