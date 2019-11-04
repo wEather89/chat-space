@@ -1,5 +1,7 @@
 require 'rails_helper'
 
+# 画像のアップロードしなきゃいけないあたりは飛ばした。てかテスト全般全然身についていないと思う
+
 RSpec.describe Message, type: :model do
   describe '#create' do
     context 'can save' do
